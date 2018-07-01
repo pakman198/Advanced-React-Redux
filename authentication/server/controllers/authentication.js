@@ -20,6 +20,8 @@ exports.signup = function(req, res, next) {
   const email = req.body.email;
   const password = req.body.password;
 
+  // This validation is nice but also added required property to
+  // the User schema in its email and password properties
   if( !email || !password) {
     return res.status(422).send({
       error: 'You must provide an email and password'
