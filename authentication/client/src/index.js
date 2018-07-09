@@ -11,6 +11,8 @@ import App from './components/App';
 import Welcome from './components/Welcome';
 import Signup from './components/auth/Signup';
 import Feature from './components/Feature';
+import Signout from './components/auth/Signout';
+import Signin from './components/auth/Signin';
 
 const store = createStore(
   reducers,
@@ -25,6 +27,8 @@ ReactDOM.render(
         <Switch>
           <Route path="/signup" component={Signup} />
           <Route path="/feature" component={Feature} />
+          <Route path="/signout" exact component={Signout} />
+          <Route path="/signin" exact component={Signin} />
           <Route path="/" exact component={Welcome} />
         </Switch>
       </App>

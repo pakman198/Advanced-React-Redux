@@ -7,7 +7,7 @@ class Header extends React.Component {
       <div>
         <Link to="/">Redux Auth</Link>
         <Link to="/signup">Sign Up</Link>
-        <Link to="/siginn">Sign in</Link>
+        <Link to="/signin">Sign in</Link>
         <Link to="/signout">Sign Out</Link>
         <Link to="/feature">Feature</Link>
       </div>
