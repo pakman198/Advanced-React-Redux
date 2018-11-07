@@ -5,8 +5,8 @@ class CommentList extends React.Component {
   renderComments() {
     const { comments } = this.props;
 
-    return comments.map(comment => {
-      return <li key={comment}>{comment}</li>;
+    return comments.map((comment, index) => {
+      return <li key={index}>{comment}</li>;
     });
   }
   render() {
